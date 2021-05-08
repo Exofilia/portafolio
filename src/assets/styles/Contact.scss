@@ -1,0 +1,131 @@
+@import '../styles/Vars.scss';
+
+.contentContact {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.contact__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 40%;
+    margin: 0px auto;
+    cursor: pointer;
+    margin-top: 100px;
+
+    @media only screen and (max-width: 1100px) {
+      width: 80%;
+      margin-top: 80px;
+    }
+    @media only screen and (max-width: 992px) {
+      width: 100%;
+      margin-top: 70px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 30px;
+    }
+    @media only screen and (max-width: 576px) {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+  }
+
+  .contact-item{
+      display: grid;
+      align-items: center;
+      justify-self: center;
+      width: 80px;
+      height: 80px;
+      transition: transform 0.5s;
+
+      // @media only screen and (max-width: 1100px) {
+      //   width: 60px;
+      //   // height: 70px;
+      // }
+      // @media only screen and (max-width: 992) {
+      //   width: 50px;
+      // }
+
+      // @media only screen and (max-width: 768px) {
+      //   width: 40px;
+      // }
+
+      // @media only screen and (max-width: 576PX) {
+      //   width: 50%;
+      // }
+      
+  }
+
+  .contact-item:hover,
+  .contact-item:focus{
+    transform : scale(1.25);
+    color: $main-color;
+  }
+
+
+  .title{
+    width: 80%;
+    margin: 0px auto 20px;
+    position: relative;
+    
+  }
+
+  .section-name {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: $color-primary;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    margin-top: 50px;
+}
+
+  .contact-icon{
+    width: 100%;
+  }
+
+  .contact-text{
+    width: 100%;
+    color: $color-white;
+  }
+
+  .contentFooter{
+    width: 100%;
+    background-color: $main-color;
+    text-align: center;
+    // position: relative;
+    margin-top: 10%;
+
+    // @media only screen and (max-width: 1100px) {
+      //  margin-top: 25%;
+    // }
+    // @media only screen and (max-width: 992) {
+    //    margin-top: 35%;
+    // }
+
+    // @media only screen and (max-width: 768px) {
+    //    margin-top: 35%;
+    // }
+
+    // @media only screen and (max-width: 576) {
+    //    margin-top: 35%;
+    // }    
+    
+}
+
+.lineFooter{
+    color: $color-primary;
+    width: 100%;
+    border: 0.3px solid;
+}
+
+.textFooter{
+    font-family: "Open Sans";
+    color: $color-white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

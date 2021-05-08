@@ -1,0 +1,73 @@
+@import './Vars.scss';
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+        flex-flow: column nowrap;
+        background-color:#333;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 230px;
+        padding-top: 3rem;
+        padding-left: 1rem;
+        transition: transform 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+}
+    // .color_menu{
+    //     color: $color-white;
+    //     cursor: pointer;
+    // }
+    
+    // .color_menu:hover{
+    //     color: $color-primary;
+    // }
+
+li {
+    padding: 18px 10px;
+    color: $color-white;
+    
+}
+
+li:hover{
+    transform: scaleX(1);
+    transform-origin: left;
+    color: $color-primary;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .transform-nav {
+        transform : translateX(100%);
+    }
+    .transform-nav.active {
+        transform : translateX(0);
+    }
+}
+
+
+// li::after {
+//     position: absolute;
+//     content: "";
+//     top: 110%;
+//     left: 0;
+//     width: 100%;
+//     height: 2px;
+//     // background: #e4aa48;
+//     transform: scaleX(0);
+//     transition: transform .5s;
+//     transform-origin: right;
+//     color: $color-primary;
+//     cursor: pointer;
+// }
+
+
+

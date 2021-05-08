@@ -1,0 +1,127 @@
+.burguer {
+    width: 3.2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 28px;
+    cursor: pointer;
+    z-index: 20;
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+    }
+}
+.hamburger-top {
+    content: "";
+    display: block;
+    height: 4px;
+    background: #e4aa48;
+    border-radius: 4px;
+    position: absolute;
+    top: 3.5px;
+    left: 0;
+    width: 25px;
+    animation: rotateTop0Deg 1s both ease-in-out;
+    
+}
+
+.hamburger-center {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background: #e4aa48;
+    border-radius: 4px;
+    position: relative;
+    animation: rotateCenter0Deg 1s both ease-in-out;
+}
+
+.hamburger-bottom {
+    content: "";
+    display: block;
+    height: 4px;
+    background: #e4aa48;
+    border-radius: 4px;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 25px;
+    animation: rotateBottom0Deg 1s both ease-in-out;
+}
+
+.hamburger-center.active {
+    animation: rotateCenter360Deg 1s both ease-in-out;
+}
+  
+.hamburger-top.active {
+    animation: rotateTop45Deg 1s both ease-in-out;
+}
+
+.hamburger-bottom.active {
+    animation: rotateBottom45Deg 1s both ease-in-out;
+}
+
+@keyframes rotateCenter0Deg {
+    from {
+      transform: rotate(315deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+@keyframes rotateTop0Deg {
+from {
+    left: 4px;
+    transform: rotate(45deg);
+}
+to {
+    left: 0;
+    transform: rotate(0deg);
+}
+}
+  
+@keyframes rotateBottom0Deg {
+from {
+    top: 22px;
+    right: 2px;
+    transform: rotate(45deg);
+}
+to {
+    top: 26px;
+    right: 0;
+    transform: rotate(0deg);
+}
+}
+
+@keyframes rotateTop45Deg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        left: 4px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotateBottom45Deg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        top: 22px;
+        right: 2px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotateCenter360Deg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(315deg);
+    }
+}
