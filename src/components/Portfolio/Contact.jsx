@@ -4,7 +4,7 @@ import email from '../../assets/static/email.png';
 import githbub from '../../assets/static/github.png';
 import linkedin from '../../assets/static/linkedin.png';
 import codepen from '../../assets/static/codepen.png';
-import phone from '../../assets/static/phone-call.png';
+
 
 const Contact = () => {
     return (
@@ -19,7 +19,6 @@ const Contact = () => {
                     <div className="contact-icon">
                         <a href="mailto:lpaocastrillon@gmail.com"><img src={email} alt="Email" /></a>
                     </div>
-                    
                 </div>
 
                 <div className="contact-item">

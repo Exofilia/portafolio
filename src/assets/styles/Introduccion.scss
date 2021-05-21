@@ -19,25 +19,25 @@
     margin: 0px auto;
 
 
-    @media only screen and (max-width: 1100px) {
+    @media only screen and (min-width: 1100px) {
         width: 85%;
     }
 
-    @media only screen and (max-width: 992px) {
+    @media only screen and (min-width: 992px) {
         width: 90%;
     }
 
-    @media only screen and (max-width: 840px) {
+    @media only screen and (min-width: 840px) {
         width: 95%;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    @media only screen and (max-width: 748px) {
+    @media only screen and (min-width: 748px) {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    @media only screen and (max-width: 576px) {
+    @media only screen and (min-width: 576px) {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -57,27 +57,27 @@
     margin-bottom: 190px;
     width: 100%;
 
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (min-width: 1100px) {
             margin-bottom: 180px;
         }
-        @media only screen and (max-width: 992px) {
+        @media only screen and (min-width: 992px) {
             margin-bottom: 170px;
         }
 
-        @media only screen and (max-width: 840px) {
+        @media only screen and (min-width: 840px) {
             width: 80%;
             margin-top: 60px;
             margin-bottom: 10px;
             margin-left: 50px;
         }
-        @media only screen and (max-width: 748px) {
+        @media only screen and (min-width: 748px) {
             width: 90%;
             margin-top: 60px;
             margin-left: 50px;
             margin-bottom: 10px;
         }
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (min-width: 576px) {
             width: 95%;
             margin-top: 60px;
             margin-left: 50px;
@@ -127,18 +127,18 @@
     margin-top: 20px;
     margin-bottom: 20px;
 
-    // @media only screen and (max-width: 1100px) {
+    // @media only screen and (min-width: 1100px) {
     //     width: 100%;
     // }
-    // @media only screen and (max-width: 992) {
+    // @media only screen and (min-width: 992) {
     //     margin-bottom: 170px;
     // }
 
-    // @media only screen and (max-width: 748px) {
+    // @media only screen and (min-width: 748px) {
     //     width: 80%;
     // }
 
-    // @media only screen and (max-width: 576) {
+    // @media only screen and (min-width: 576) {
     //     margin-bottom: 90px;
     // }
 }
@@ -233,30 +233,30 @@ a {
     margin-top: 35px;
     width: 100%;
     
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (min-width: 1100px) {
             margin-top: 25px;
             grid-template-columns: repeat(5, 1fr);
         }
 
-        @media only screen and (max-width: 992px) {
+        @media only screen and (min-width: 992px) {
             margin-top: 15px;
             grid-gap: 5px;
             grid-template-columns: repeat(4, 1fr);
         }
 
-        @media only screen and (max-width: 840px) {
+        @media only screen and (min-width: 840px) {
             margin-top: 15px;
             grid-gap: 1px;
             grid-template-columns: repeat(6, 1fr);
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (min-width: 768px) {
             margin-top: 15px;
             grid-gap: 1px;
             grid-template-columns: repeat(6, 1fr);
         }
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (min-width: 576px) {
             margin-top: 15px;
             grid-gap: 1px;
             grid-template-columns: repeat(4, 1fr);

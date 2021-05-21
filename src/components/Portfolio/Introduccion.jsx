@@ -8,9 +8,6 @@ import css from '../../assets/static/css.png';
 import js from '../../assets/static/javascript.png';
 import wordpress from '../../assets/static/wordpress.png';
 import html from '../../assets/static/html.png';
-import bg from '../../assets/static/coffee.jpg';
-import Particles from 'react-particles-js';
-
 
 
 const Introduccion = () => {

@@ -6,7 +6,7 @@ ul {
     flex-flow: row nowrap;
     cursor: pointer;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (min-width: 768px) {
         flex-flow: column nowrap;
         background-color:#333;
         position: fixed;
@@ -44,7 +44,7 @@ li:hover{
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .transform-nav {
         transform : translateX(100%);
     }
