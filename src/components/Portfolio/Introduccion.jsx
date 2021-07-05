@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 import '../../assets/styles/Introduccion.scss';
+// import '../../assets/styles/Responsive.scss';
 // import react from '../../assets/static/react.png';
 import atom from '../../assets/static/atom.png';
 import php from '../../assets/static/php.png';
@@ -11,18 +12,7 @@ import html from '../../assets/static/html.png';
 
 
 const Introduccion = () => {
-    //Utiliza el hook useState
-    // const [buttonClicked, setButtonClicked] = useState(false);
 
-    // handleButtonClick = () => {
-    //     setButtonClicked(true)
-    // }
-    
-    // handleClick(e) {
-    //     message.info('Click on menu item.');
-    //     console.log('click', e);
-    // }
-    
 
     return(
         <div className="contenedorIntroduction" >
@@ -52,7 +42,7 @@ const Introduccion = () => {
                     </div>
                     
                     <div className="text-intro">
-                        <p>"Hola, soy Ingeniera de sistemas con pasión por el desarrollo web y mobile, me especializo en construir  ' y ocasionalmente diseñar' ".</p>
+                        <p>Hola, soy Ingeniera de sistemas con pasión por el desarrollo web y mobile, me especializo en construir  ' y ocasionalmente diseñar'.</p>
                     </div>
                     <div className="intro-button">
                         <a className="btn_animation mr-btn"><b>Tecnologías</b>
@@ -64,28 +54,28 @@ const Introduccion = () => {
                     </div>
                     <div className="tech__container">
                         <div className="tech-carousel">
-                            <h5>React JS</h5>
+                            <h5 className="title_carousel">React JS</h5>
                             <img className="tech-img" src={atom} alt="Plus Icon" title="React Js"/>
                         </div>
                         <div className="tech-carousel">
-                            <h5>JavaScript</h5>
+                            <h5 className="title_carousel">JavaScript</h5>
                             <img className="tech-img" src={js} alt="Plus Icon" />
                         </div>
                         <div className="tech-carousel">
-                            <h5>HTML</h5>
+                            <h5 className="title_carousel">HTML</h5>
                             <img className="tech-img" src={html} alt="Plus Icon" />
                         </div>
                     
                         <div className="tech-carousel">
-                            <h5>CSS</h5>
+                            <h5 className="title_carousel">CSS</h5>
                             <img className="tech-img" src={css} alt="Plus Icon" />
                         </div>
                         <div className="tech-carousel">
-                            <h5>PHP</h5>
+                            <h5 className="title_carousel">PHP</h5>
                             <img className="tech-img" src={php} alt="Plus Icon" />
                         </div>
                         <div className="tech-carousel">
-                            <h5>WordPress</h5>
+                            <h5 className="title_carousel">WordPress</h5>
                             <img className="tech-img" src={wordpress} alt="Plus Icon" />
                         </div>
                         

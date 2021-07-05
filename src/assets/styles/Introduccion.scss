@@ -15,33 +15,23 @@
 .introduccion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
     margin: 0px auto;
-
-
-    @media only screen and (min-width: 1100px) {
+    
+    @media (min-width: 576px) {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        // background-color: seagreen;
+    }
+    @media (min-width: 748px) {    
         width: 85%;
-    }
-
-    @media only screen and (min-width: 992px) {
-        width: 90%;
-    }
-
-    @media only screen and (min-width: 840px) {
-        width: 95%;
         grid-template-columns: repeat(1, 1fr);
+        // background-color: royalblue;
     }
-
-    @media only screen and (min-width: 748px) {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    @media only screen and (min-width: 576px) {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-   
+    @media (min-width: 992px) {
+        width: 80%;  
+        grid-template-columns: repeat(2, 1fr);
+        // background-color: rgb(148, 160, 45);
+    }        
 }
 
 .introduccion__item {
@@ -51,39 +41,8 @@
     text-align: left;
     color:rgb(255, 255, 255);
     font-size: 16px;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 190px;
     width: 100%;
-
-        @media only screen and (min-width: 1100px) {
-            margin-bottom: 180px;
-        }
-        @media only screen and (min-width: 992px) {
-            margin-bottom: 170px;
-        }
-
-        @media only screen and (min-width: 840px) {
-            width: 80%;
-            margin-top: 60px;
-            margin-bottom: 10px;
-            margin-left: 50px;
-        }
-        @media only screen and (min-width: 748px) {
-            width: 90%;
-            margin-top: 60px;
-            margin-left: 50px;
-            margin-bottom: 10px;
-        }
-
-        @media only screen and (min-width: 576px) {
-            width: 95%;
-            margin-top: 60px;
-            margin-left: 50px;
-            margin-bottom: 5px;
-        }
-        
+    padding: 5%;
 }
 
 .punto{
@@ -92,7 +51,18 @@
 
 .name{
     width: 100%;
-    font-size: 22px;
+    
+    @media (min-width: 576px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 748px) {
+        font-size: 25px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 22px;
+    }
 }
 
 .color_font{
@@ -102,12 +72,11 @@
 .containerLine{
     width: 100%;
 }
+
 .line {
-    width: 60px;
+    width: 100px;
     height: 2px;
     background: $color-primary;
-    margin-top: 15px;
-    margin-bottom: 10px;
 }
 
 .pr-20{
@@ -122,34 +91,38 @@
     text-transform: uppercase;
     letter-spacing: .12em;
 }
-.text-intro{    
-    width: 100%;
+.text-intro{
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
+    padding: 1%;
 
-    // @media only screen and (min-width: 1100px) {
-    //     width: 100%;
-    // }
-    // @media only screen and (min-width: 992) {
-    //     margin-bottom: 170px;
-    // }
-
-    // @media only screen and (min-width: 748px) {
-    //     width: 80%;
-    // }
-
-    // @media only screen and (min-width: 576) {
-    //     margin-bottom: 90px;
-    // }
+    @media (min-width: 576px) {
+        font-size: 20px;
+        margin-right: 10px;
+    }
 }
 
 .sc_rs {
     width: 100%;
     margin-top: 10px;
-    font-size: 18px;
     line-height: 27px;
     color:$color-white;
+
+    @media (min-width: 576px) {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+   
+    @media (min-width: 748px) {
+        font-size: 25px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
 }
+
 .sc_rs a:hover{
     color: $color-primary;
 }
@@ -172,6 +145,12 @@
     display: inline-block;
     cursor: pointer;
     margin-top: 40px;
+
+    // @media only screen and (min-width: 576px) {
+    //     font-size: 30px;
+    //     width: 300px;
+    //     height: 90px;
+    // }
 }
 
 
@@ -190,11 +169,23 @@
 }
 
 .mr-btn {
-    font-size: 15px;
+    // font-size: 15px;
     line-height: 24px;
     color:$color-primary;
     display: inline-block;
     cursor: pointer;
+
+    @media (min-width: 576px) {
+        font-size: 35px;
+    }
+
+    @media (min-width: 748px) {
+        font-size: 25px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 15px;
+    }
 }
 
 .btn_animation{
@@ -227,39 +218,24 @@ a {
 
 .tech__container{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
-    grid-gap: 10px;
-    margin-top: 35px;
     width: 100%;
     
-        @media only screen and (min-width: 1100px) {
-            margin-top: 25px;
-            grid-template-columns: repeat(5, 1fr);
-        }
-
-        @media only screen and (min-width: 992px) {
+        @media (min-width: 576px) {
             margin-top: 15px;
-            grid-gap: 5px;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
-
-        @media only screen and (min-width: 840px) {
+        @media (min-width: 768px) {
             margin-top: 15px;
             grid-gap: 1px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 992px) {
+            margin-top: 35px;
+            grid-gap: 10px;
             grid-template-columns: repeat(6, 1fr);
-        }
-
-        @media only screen and (min-width: 768px) {
-            margin-top: 15px;
-            grid-gap: 1px;
-            grid-template-columns: repeat(6, 1fr);
-        }
-
-        @media only screen and (min-width: 576px) {
-            margin-top: 15px;
-            grid-gap: 1px;
-            grid-template-columns: repeat(4, 1fr);
         }
 }
 
@@ -269,13 +245,43 @@ a {
     text-align: center;
     width: 70px;
     height: 70px;
-    margin: 10px 10px;
+    padding: 5px;
     cursor: pointer;
     transition: transform 0.5s;
+
+    @media (min-width: 576px) {
+        width: 150px;
+        height: 150px;
+    }
+
+    @media (min-width: 768px) {
+        width: 110px;
+        height: 110px;
+    }
+
+    @media (min-width: 992px) {
+        width: 70px;
+        height: 70px;
+    }
+    
 }
 
 .tech-carousel:hover{
     transform : scale(1.25);
+}
+
+.title_carousel{
+    @media (min-width: 576px) {
+        font-size: 19px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 17px;
+    }
+
+    @media (min-width: 992px) {
+       font-size: 15px;
+    }
 }
 
 .tech-img{

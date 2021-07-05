@@ -11,7 +11,9 @@ const App = () => {
         <div className="App">
             <Navbar />
             <div className="container">
-                <Particles 
+                <Particles
+
+                /** Formasssssssssssssssss */ 
                     // params={{
                     //     "particles": {
                     //         "number": {
@@ -37,6 +39,8 @@ const App = () => {
                     //         }
                     //     }
                     // }}  
+
+                    /** Bolassssssssssssssssssssssssssssssssssss */
                     params={{
                         particles: {
                             number: {

@@ -8,11 +8,18 @@
     z-index: 20;
     display: none;
 
-    @media only screen and (min-width: 768px) {
+    @media (max-width: 768px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
     }
+
+    // @media (min-width: 992px) {
+    //     display: flex;
+    //     justify-content: space-around;
+    //     flex-flow: column nowrap;
+    // }
+
 }
 .hamburger-top {
     content: "";
