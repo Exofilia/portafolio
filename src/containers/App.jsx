@@ -73,7 +73,16 @@ const App = () => {
                             move: {
                                 speed: 0.2
                             }
-                         }    
+                        },
+                        interactivity: {
+                            events: {
+                              onresize: {
+                                enable: true,
+                                density_auto: true,
+                                density_area: 600 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+                              }
+                            }
+                        }    
                     }}
 
 
