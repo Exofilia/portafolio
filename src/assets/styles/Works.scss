@@ -4,6 +4,7 @@
     width: 100%;
     background-color: $main-color;
     position: relative;
+    
 }
 
   ::-webkit-scrollbar {
@@ -17,7 +18,7 @@
     overflow: scroll;
     width: 100%;
 
-    @media (min-width: 576px) {
+    @media (min-width: 360px) {
       grid-template-columns: repeat(1, 1fr);
       width: 93%;
     }

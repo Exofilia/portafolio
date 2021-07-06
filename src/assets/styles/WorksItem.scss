@@ -18,13 +18,13 @@
     -webkit-transform-origin: center left;
             transform-origin: center left;
 
-            @media (min-width: 576px) {
+            @media (min-width: 360px) {
               grid-template-columns: repeat(1, 1fr);
-              width: 70%;
+              width: 95%;
             }
         
             @media (min-width: 768px) {
-                width: 80%;
+                width: 95%;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 10px;
             }
@@ -34,24 +34,6 @@
               grid-gap: 15px;
               grid-template-columns: repeat(3, 1fr);
             }
-
-
-          // @media only screen and (min-width: 1100px) {
-          //    margin-bottom: 100px;
-          // }
-          // @media only screen and (min-width: 992px) {
-          //   margin-bottom: 90px;
-          // }
-
-          // @media only screen and (min-width: 768px) {
-          //     margin-bottom: 80px;
-          // }
-
-          // @media only screen and (min-width: 576px) {
-          //   margin: 0 auto;
-          //   margin-bottom: 30px;
-          // }
-
   }
   
 
@@ -77,7 +59,6 @@
   }
 
   .carousel-icon{
-      // height: 190px;
       margin: 15px 15px 15px 15px;
       text-align: center;
   }
@@ -88,8 +69,7 @@
     font-size: 12px;
     text-align: justify;
     color: $main-color;
-    // background-color: red;
-
+    
   }
 
   .encabezado{

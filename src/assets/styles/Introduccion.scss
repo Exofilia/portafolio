@@ -17,7 +17,7 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 0px auto;
     
-    @media (min-width: 576px) {
+    @media (min-width: 360px) {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         // background-color: seagreen;
@@ -43,6 +43,10 @@
     font-size: 16px;
     width: 100%;
     padding: 5%;
+
+    @media (min-width: 360px) {
+        margin-bottom: 50px;
+    }
 }
 
 .punto{
@@ -52,7 +56,7 @@
 .name{
     width: 100%;
     
-    @media (min-width: 576px) {
+    @media (min-width: 360px) {
         font-size: 30px;
     }
 
@@ -96,10 +100,10 @@
     margin-bottom: 20px;
     width: 100%;
     padding: 1%;
-
-    @media (min-width: 576px) {
+    
+    @media (min-width: 360px) {
         font-size: 20px;
-        margin-right: 10px;
+        // margin-right: 10px;
     }
 }
 
@@ -109,8 +113,8 @@
     line-height: 27px;
     color:$color-white;
 
-    @media (min-width: 576px) {
-        font-size: 25px;
+    @media (min-width: 360px) {
+        font-size: 20px;
         margin-top: 50px;
     }
    
@@ -158,8 +162,7 @@
     background: $color-primary;
     color: #000;
     transition: .3s ease-out;
-  }
-
+}
 
 
 .intro-button{
@@ -169,18 +172,17 @@
 }
 
 .mr-btn {
-    // font-size: 15px;
     line-height: 24px;
     color:$color-primary;
     display: inline-block;
     cursor: pointer;
 
-    @media (min-width: 576px) {
-        font-size: 35px;
+    @media (min-width: 360px) {
+        font-size: 20px;
     }
 
     @media (min-width: 748px) {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     @media (min-width: 992px) {
@@ -221,8 +223,8 @@ a {
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     width: 100%;
-    
-        @media (min-width: 576px) {
+    padding: 2%;
+        @media (min-width: 360px) {
             margin-top: 15px;
             grid-template-columns: repeat(3, 1fr);
         }
@@ -243,15 +245,14 @@ a {
     display: grid;
     align-items: center;
     text-align: center;
-    width: 70px;
-    height: 70px;
-    padding: 5px;
+    padding: 3px;
     cursor: pointer;
     transition: transform 0.5s;
+    // background-color: rosybrown;
 
-    @media (min-width: 576px) {
-        width: 150px;
-        height: 150px;
+    @media (min-width: 360px) {
+        width: 100px;
+        height: 100px;
     }
 
     @media (min-width: 768px) {
@@ -271,16 +272,17 @@ a {
 }
 
 .title_carousel{
-    @media (min-width: 576px) {
-        font-size: 19px;
+    color: $color-primary;
+    @media (min-width: 360px) {
+        font-size: 15px;
     }
 
     @media (min-width: 768px) {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     @media (min-width: 992px) {
-       font-size: 15px;
+       font-size: 17px;
     }
 }
 
